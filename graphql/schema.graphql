@@ -1,15 +1,20 @@
-type Movie {
+type VC{
+    address:String!
+    centerName:String!
+    centerType:String!
+    createdAt:String!
+    facilityName:String!
     id:Int!
-    title:String!
-    rating:Float!
-    summary:String!
-    language:String!
-    medium_cover_image:String!
-    description_intro:String!
+    lat:String!
+    lng:String!
+    org:String!
+    phoneNumber:String!
+    sido:String!
+    sigungu:String!
+    updatedAt:String!
+    zipCode:String!
 }
 
 type Query{
-    movies(limit:Int,rating:Float):[Movie]!
-    movie(id: Int!): Movie
-    suggestions(id: Int!): [Movie]!
+    vc:[VC]!
 }
